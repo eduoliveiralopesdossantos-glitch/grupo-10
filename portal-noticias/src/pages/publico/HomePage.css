@@ -1,0 +1,21 @@
+.hero { background-size: cover; background-position: center; height: 480px; position: relative; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,27,42,0.9) 50%, rgba(13,27,42,0.4)); display: flex; align-items: flex-end; }
+.hero-content { padding-bottom: 48px; max-width: 600px; }
+.hero-tags { display: flex; gap: 8px; margin-bottom: 14px; }
+.hero-title { font-size: 2.4rem; color: white; margin-bottom: 12px; line-height: 1.15; }
+.hero-sub { color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 24px; line-height: 1.5; }
+.home-filters { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+.home-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+.section-heading { font-family: var(--font-display); font-size: 1.5rem; color: var(--primary); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 3px solid var(--accent); display: inline-block; }
+.home-sidebar { width: 280px; flex-shrink: 0; display: flex; flex-direction: column; gap: 24px; }
+.sidebar-widget { background: white; border-radius: var(--radius-lg); padding: 20px; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); }
+.widget-title { font-family: var(--font-condensed); font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+.widget-news-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid var(--gray-100); color: var(--gray-800); font-size: 13px; line-height: 1.4; }
+.widget-news-item:last-child { border: none; }
+.widget-rank { font-family: var(--font-condensed); font-size: 18px; font-weight: 700; color: var(--accent); width: 24px; flex-shrink: 0; line-height: 1.2; }
+.widget-news-title { flex: 1; }
+.widget-uf-item { display: flex; gap: 10px; align-items: center; padding: 6px 0; font-family: var(--font-condensed); font-size: 14px; color: var(--gray-700); border-bottom: 1px solid var(--gray-100); }
+.widget-uf-item:last-child { border: none; }
+.widget-uf-item span { color: var(--gray-500); font-size: 12px; }
+@media (max-width: 1024px) { .home-sidebar { display: none; } }
+@media (max-width: 600px) { .hero { height: 320px; } .hero-title { font-size: 1.5rem; } }
